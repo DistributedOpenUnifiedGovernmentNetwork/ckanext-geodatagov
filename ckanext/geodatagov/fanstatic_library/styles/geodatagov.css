@@ -55,7 +55,7 @@ h3 {
 body,
 .main,
 [role=main] {
-    background: #f6f6f6;
+  background: #d7e5f1;
 }
 #content {
     margin-top: 0;
@@ -101,11 +101,11 @@ a {
     clear: both;
 }
 .pre-header {
-    background: #0a3163 url("http://www.data.gov/sites/all/themes/datagov/images/preheader-bg.jpg") repeat-x center top;
-    color: white;
-    font-style: italic;
-    font-size: 11px;
-    font-family: "Lucida Bright", "Times New Roman", Times, serif;
+  /*background: #0a3163 url("http://www.data.gov/sites/all/themes/datagov/images/preheader-bg.jpg") repeat-x center top;*/
+  color: white;
+  font-style: italic;
+  font-size: 11px;
+  font-family: "Lucida Bright", "Times New Roman", Times, serif;
 }
 .pre-header .container {
     width: 920px;
@@ -115,22 +115,35 @@ a {
     margin-right: 3px;
 }
 .masthead .container {
-    width: 970px;
-    margin-top: 8px;
-    /* background: #ffffff url("../images/header-line.png?1") 100% 100% no-repeat;
-     -webkit-border-radius: 3px 3px 0 0;
-     -moz-border-radius: 3px 3px 0 0;
-     -o-border-radius: 3px 3px 0 0;
-     border-radius: 3px 3px 0 0;*/
+  width: 940px;
+  margin-top: 0px;
+  background: #226391;
+  /* DOC header
+  background: url("../images/head_commerce_small.png") no-repeat right top;
+  background-color: #dbdbdb;
+  */
+  /*
+  background: #b6d2e7;
+  background: #9cbcd4;
+  background: #ffffff url("../images/header-line.png?1") 100% 100% no-repeat;*/
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 .masthead .container .top {
-    *zoom: 1;
-    position: relative;
-    /*  background: url("http://www.data.gov/sites/all/themes/datagov/images/header-start-bg.jpg");
-      -webkit-border-radius: 4px 4px 0 0;
-      -moz-border-radius: 4px 4px 0 0;
-      -o-border-radius: 4px 4px 0 0;
-      border-radius: 4px 4px 0 0;*/
+  *zoom: 1;
+  position: relative;
+  background: #226391;
+  /*
+  background: #b6d2e7;
+  background: #9cbcd4;
+  /*background: url("http://www.data.gov/sites/all/themes/datagov/images/header-start-bg.jpg");*/
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  height: 30px;
 }
 .masthead .container .top:before,
 .masthead .container .top:after {
@@ -163,15 +176,16 @@ a {
     width: 204px;
 }
 .masthead .container .logo a {
-    display: block;
-    float: left;
-    height: 48px;
-    background: url("../images/logo.svg") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
-    width: 200px;
+  display: block;
+  float: left;
+  height: 37px;
+  background-image: url("../images/datanoaagov_logo.png");
+  width: 325px;
 }
 .masthead .container .logo a span {
     display: none;
 }
+
 .masthead .container .beta {
     position: absolute;
     top: 25px;
@@ -192,11 +206,12 @@ a {
     padding: 6px 10px;
 }
 .masthead .container .account-wrapper .not-authed a {
-    color: #284a7a;
-    font-weight: bold;
-    padding-left: 16px;
-    font-size: 12px;
-    background: transparent url("../images/icon-login.gif") 0 50% no-repeat;
+  /*color: #284a7a;*/
+  color: #F5F5F5;
+  font-weight: bold;
+  padding-left: 16px;
+  font-size: 12px;
+  /*background: transparent url("http://www.data.gov/sites/all/themes/datagov/images/icon-login.gif") 0 50% no-repeat;*/
 }
 .masthead .container .account-wrapper .not-authed a span {
     text-decoration: underline;
@@ -235,10 +250,10 @@ a {
     text-decoration: none;
 }
 .masthead .container .site-wide-search {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 7px 10px;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  margin: 7px 10px;
 }
 .masthead .container .site-wide-search input {
     margin: 0;
@@ -255,7 +270,8 @@ a {
     font-size: 11px;
     width: 184px;
     padding-left: 11px;
-    background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg");
+    background: #F5F5F5;
+	/*background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg");*/
 }
 .masthead .container .site-wide-search button {
     font: 0/0 a;
@@ -263,7 +279,9 @@ a {
     text-shadow: none;
     background-color: transparent;
     border: 0;
-    background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png");
+    background: url("../images/search_new.png");
+	/*background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png");*/
+	
     background-repeat:no-repeat;
     width: 25px;
     height: 28px;
@@ -407,11 +425,17 @@ a {
     text-transform: uppercase;
 }
 .masthead .container .top-nav .secondary span {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 21px;
+  /*display: block;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 21px;
 }
+.masthead .container .top-nav .secondary span.under_development {
+  padding-left: 0px;
+  font-size: 14px;
+}
+
+
 .flash-messages {
     padding: 10px;
     border: 1px solid #CCC;
@@ -906,16 +930,19 @@ input:-moz-placeholder {
 }
 .search-box-new {
     position: absolute;
-    right: 245px;
-    margin: 27px 10px;
+    top: 50px;
+    right: 10px;
+    margin: 5px 10px;
 }
 input.search-new{
-    background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg") repeat scroll 0 0 transparent;
+	background: #F5F5F5;
+    /*background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg") repeat scroll 0 0 transparent;*/
     border:0 none;
     width:189px;
 }
 .search-box-new button{
-    background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png") no-repeat scroll 0 0 transparent;
+	background: url("../images/search_new.png");
+    /*background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png") no-repeat scroll 0 0 transparent;*/
     border: 0 none;
     color: transparent;
     font: 0px/0 a;
@@ -925,13 +952,6 @@ input.search-new{
     position:absolute;
     top:1px;
     right:2px;
-}
-.module-heading img {
-    cursor: pointer;
-    cursor:hand;
-}
-.module-heading span {
-    display:block;
 }
 body{font-size:87.5%;}
 #dataset-map-attribution div a{text-decoration:underline;}
