@@ -14,5 +14,5 @@ cat  << EOF >>/etc/ansible/hosts
 EOF
 
 echo "sed -i 's/user: vagrant/user: root/g' ckanext-geodatagov/deployment/noaanew-devserver.yml"
-echo "ansible-playbook ckanext-geodatagov/deployment/noaanew-devserver.yml"
+echo "ansible-playbook ckanext-geodatagov/deployment/noaanew-devserver.yml  --connection=local"
 
