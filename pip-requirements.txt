@@ -6,7 +6,7 @@
 redis==2.10.5
 
 -e git+https://github.com/asl2/PyZ3950.git#egg=py3250
-ply==3.4
+ply==3.10
 
 
 -e git+https://github.com/GSA/ckanext-saml2.git@master#egg=ckanext-saml2
